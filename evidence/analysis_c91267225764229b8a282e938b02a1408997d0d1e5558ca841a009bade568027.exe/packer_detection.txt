@@ -1,0 +1,2 @@
+--- FILE SIGNATURE CHECK ---
+[+] UPX detected

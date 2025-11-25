@@ -1,0 +1,34 @@
+arch     x86
+baddr    0x400000
+binsz    724992
+bintype  pe
+bits     32
+canary   true
+injprot  false
+retguard false
+class    PE32
+cmp.csum 0x000b580d
+compiled Thu Aug 25 07:20:50 2061
+crypto   false
+dbg_file C:\Users\Administrator\Desktop\Client\Temp\hJafkVGgZB\src\obj\Debug\HnaZtD.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     2846D6F7DE3F4F03BCD220AC60BB69371
+laddr    0x0
+lang     cil
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true

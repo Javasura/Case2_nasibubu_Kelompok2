@@ -1,0 +1,40 @@
+ExifTool Version Number         : 13.10
+File Name                       : c91267225764229b8a282e938b02a1408997d0d1e5558ca841a009bade568027.exe
+Directory                       : .
+File Size                       : 725 kB
+File Modification Date/Time     : 2025:11:19 03:24:54-05:00
+File Access Date/Time           : 2025:11:18 23:24:18-05:00
+File Inode Change Date/Time     : 2025:11:18 22:48:16-05:00
+File Permissions                : -rw-r--r--
+File Type                       : Win32 EXE
+File Type Extension             : exe
+MIME Type                       : application/octet-stream
+Machine Type                    : Intel 386 or later, and compatibles
+Time Stamp                      : 2061:08:25 07:20:50-04:00
+Image File Characteristics      : Executable, 32-bit
+PE Type                         : PE32
+Linker Version                  : 48.0
+Code Size                       : 713728
+Initialized Data Size           : 10240
+Uninitialized Data Size         : 0
+Entry Point                     : 0xb0076
+OS Version                      : 4.0
+Image Version                   : 0.0
+Subsystem Version               : 6.0
+Subsystem                       : Windows GUI
+File Version Number             : 0.0.0.0
+Product Version Number          : 0.0.0.0
+File Flags Mask                 : 0x003f
+File Flags                      : (none)
+File OS                         : Win32
+Object File Type                : Executable application
+File Subtype                    : 0
+Language Code                   : Neutral
+Character Set                   : Unicode
+File Description                : 
+File Version                    : 0.0.0.0
+Internal Name                   : HnaZtD.exe
+Legal Copyright                 : 
+Original File Name              : HnaZtD.exe
+Product Version                 : 0.0.0.0
+Assembly Version                : 0.0.0.0
