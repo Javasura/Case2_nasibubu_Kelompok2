@@ -1,0 +1,25 @@
+alert tcp any any -> any 443 (
+    msg:"Telegram C2 API Contact - api.telegram.org";
+    tls.sni; content:"api.telegram.org";
+    sid:100001; rev:1;
+)
+
+alert tcp any any -> any 443 (
+    msg:"Malware Telegram Bot Exfiltration - sendDocument";
+    flow:to_server,established;
+    content:"/sendDocument"; http_uri;
+    sid:100002; rev:1;
+)
+
+alert tcp any any -> 149.154.167.220 443 (
+    msg:"Malware contacting Telegram C2 IP 149.154.167.220";
+    flow:to_server,established;
+    sid:100003; rev:1;
+)
+
+alert tcp any any -> any 443 (
+    msg:"Telegram Bot Token Detected";
+    content:"/bot"; http_uri;
+    pcre:"/bot[0-9]{8,12}:/";
+    sid:100004; rev:1;
+)

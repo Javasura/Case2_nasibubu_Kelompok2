@@ -1,1 +1,15 @@
-isi yang di gdrive dl
+Indicator,Type,Category,Description
+C916272576422988A28E293B802A1408997D0D11E5558C8A410009BADE568027,SHA256,File Hash,Malware sample hash
+malware.exe,Filename,File Artifact,Primary executable filename
+HnaZtD.exe,OriginalFilename,File Artifact,Original name found in metadata
+C:\Users\Administrator\Desktop\Client\Temp\hJafkVGgZB\src\obj\Debug\HnaZtD.pdb,Path,Debug Info,Embedded PDB debug path
+System.Security.Cryptography RNGCryptoServiceProvider,Library,Behavior,Possible cryptographic obfuscation
+MemoryStream,System.IO,Behavior,Used for buffer manipulation
+https://api.telegram.org/bot/sendDocument,URL,Network,Telegram Bot API exfiltration endpoint
+api.telegram.org,Domain,Network,Telegram API domain
+telegram.org,Domain,Network,Telegram top level domain used by malware
+149.154.167.220,IP,Network,Telegram C2 IP
+443,Port,Network,HTTPS C2 communication
+select * from Mesajlar1,SQL Query,Behavior,Suspicious SQL data extraction
+delete from Oda101,SQL Query,Behavior,Data manipulation/deletion activity
+UPDATE M SET Adi=...,SQL Query,Behavior,Sensitive data modification
