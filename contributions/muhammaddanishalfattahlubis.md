@@ -18,7 +18,7 @@
 - Mengolah output teknis menjadi laporan yang terstruktur
 - Membuat dan menyusun IoC list berdasarkan hasil analisis
 - Mengembangkan YARA Rules & Snort Rules untuk deteksi malware
-- Membantu penyusunan struktur laporan dan materi presentasi
+- Membantu penyusunan struktur laporan
 - Berkoordinasi dengan tim untuk menyatukan hasil analisis teknis
 
 ---
@@ -54,9 +54,9 @@
     - `Malware_HnaZtD_TelegramC2.yar`
     - `telegram-c2.rules`
 
-- [✅] **Task 6: Menyusun bagian laporan final & konten presentasi**
+- [✅] **Task 6: Menyusun bagian laporan final**
   - Time spent: 2 hours
-  - Output: Analisis IoC, grafik alur analisis, materi slide
+  - Output: Analisis IoC, grafik alur analisis
 
 **Total Time Invested:** **9.5 hours**
 
@@ -114,7 +114,7 @@
 | Timeline | Alur kerja dokumentasi | 20% |
 | IoC List | **Full creation and formatting** | **100%** |
 | Recommendations | Deteksi dan monitoring | 20% |
-| Presentation Slides | Bagian rules & IoC | 30% |
+| Presentation Slides | - | - |
 
 ---
 
@@ -189,14 +189,11 @@
 - `ioc-list.csv`
 - `Malware_HnaZtD_TelegramC2.yar`
 - `telegram-c2.rules`
-- Screenshots dari presentasi
 
 ---
 
 ## 13. Presentation Contribution
-- IoC explanation & detection rules section
-- Duration: 3 minutes
-- Key Points: C2 breakdown & defensive rules
+- -
 
 ---
 
