@@ -239,8 +239,7 @@ Output:
 - Clean and organized output  
 - Strong technical depth  
 
-### **Areas for Improvement**
-- Add automatic YARA scanning  
+### **Areas for Improvement**  
 - Add import anomaly detection  
 
 ### **Overall Self-Assessment**
@@ -258,12 +257,17 @@ Output:
 ## 12. Evidence of Work
 
 Folder: `analysis_<filename>`  
+- `filetype.txt`
+- `md5.txt`
+- `sha256.txt`
 - `strings.txt`  
 - `metadata.txt`  
 - `objdump_headers.txt`  
 - `objdump_disasm.txt`  
-- `rabin2_info.txt`  
-- `packer_detection.txt`  
+- `rabin2_info.txt` 
+- `rabin2_strings.txt`
+- `packer_detection.txt`
+
 
 ---
 
