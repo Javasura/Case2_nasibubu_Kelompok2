@@ -1,1 +1,2 @@
-bikin di canva, download to pdf, trs taro di sini
+**Dokumentasi File Presentasi Kelompok 2**
+File presentasi kelompok ini dibuat menggunakan platform desain Canva.
