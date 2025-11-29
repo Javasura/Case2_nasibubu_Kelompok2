@@ -1,9 +1,13 @@
 Individual Contribution Report
 
 Name: Muhammad Bagas Anugrah
+
 Student ID: 235150201111008
-Group: NASIBUBU
-Case: FORENSIC INVESTIGATION REPORT CASE BASE 2 – MALWARE ANALYSIS
+
+Group: 2
+
+Case: FORNSIC INVESTIGATION REPORT CASE BASE 2 – MALWARE ANALYSIS
+
 Date: 29 November 2025
 
 1. My Role in the Team
@@ -23,110 +27,34 @@ Menghasilkan bukti screenshot terkait runtime behavior
 Memberikan insight mengenai kemungkinan malware behavior berdasarkan hasil eksekusi
 
 2. Tasks Completed
-Week 1 – Environment Preparation
 
-[✅] Task 1: Konfigurasi VM sebagai sandbox malware
+[✅] Setup lingkungan analisis (VM, network isolation, snapshot)
 
-Time spent: 1 hour
+[✅] Menjalankan sample malware untuk runtime observation
 
-Output: Windows VM siap dengan tools forensic dan jaringan host-only
+[✅] Monitoring network behavior menggunakan Wireshark
 
-[✅] Task 2: Menyiapkan folder kerja & setup tools
+[✅] Monitoring process, threads, dan registry changes menggunakan Process Hacker
 
-Time spent: 30 minutes
-
-Output: Folder MalwareLab/, Wireshark, Process Hacker terinstall dan siap digunakan
-
-Week 2 – Malware Execution & Dynamic Analysis
-
-[✅] Task 3: Menjalankan malware sample
-
-Time spent: 1.5 hours
-
-Output: Observasi awal terhadap eksekusi file di VM
-
-[✅] Task 4: Network monitoring dengan Wireshark
-
-Time spent: 2 hours
-
-Output: Capture file (.pcapng), hasil analisis traffic, dan screenshot
-
-[✅] Task 5: Process behavior tracking via Process Hacker
-
-Time spent: 2 hours
-
-Output: Screenshot process tree, loaded modules, handle behavior
-
-Week 3 – Report Refinement
-
-[✅] Task 6: Menulis hasil dynamic analysis
-
-Time spent: 1.5 hours
-
-Output: Section Network Analysis dan Runtime Behavior Summary untuk laporan final
-
-Total Time Invested: 8 hours
+[✅] Dokumentasi hasil analisis ke laporan kelompok
 
 3. Tools & Techniques Used
-Tools
 Tool	Purpose	Output
-Wireshark	Network monitoring & traffic inspection	.pcapng file, no outbound activity
-Process Hacker	Runtime process inspection	Screenshot process tree
-VMware/VirtualBox	Secure malware sandbox	Isolated execution
-PowerShell	File handling & execution environment	Execution logs & commands used
-Analysis Techniques
+VM Sandbox	Eksekusi malware aman	Runtime observation
+Wireshark	Monitoring komunikasi jaringan	Capture traffic (.pcapng)
+Process Hacker	Identifikasi suspicious process & threads	Behavior evidence
+Screenshots	Dokumentasi hasil analisis	Evidence for report
+4. Key Findings
 
-Dynamic Analysis
+Tidak ditemukan network connection outbound atau inbound selama analisis runtime.
 
-Execution monitoring
+Malware tidak menunjukkan indikasi komunikasi C2, exfiltration, ataupun request ke URL/domain tertentu.
 
-Network packet inspection (PCAP review)
+Berdasarkan behavior di VM, malware lebih berorientasi pada aktivitas lokal dibandingkan komunikasi jaringan.
 
-Process behavior analysis
+Hasil ini konsisten dengan analisis tim IoC dan static analysis yang menunjukkan tidak adanya networking library call aktif.
 
-4. My Key Findings
-Finding 1 — No Network Activity Detected
-
-Description: Malware tidak melakukan komunikasi jaringan setelah dieksekusi.
-
-Evidence: Wireshark menunjukkan tidak ada koneksi keluar atau request ke domain/IP tertentu.
-
-Significance: Indikasi bahwa malware:
-
-Local-only malware
-
-Dormant malware (butuh trigger atau argumen tertentu)
-
-Non-network payload
-
-My Contribution: Monitoring runtime dan pembayaran bukti screenshot hasil Wireshark.
-
-Finding 2 — No Suspicious Process Chain
-
-Description: Pada Process Hacker tidak terdapat indikasi child process, thread injection, atau behavior eksploitasi.
-
-Evidence: Screenshot menunjukkan hanya executable utama berjalan tanpa spawn process tambahan.
-
-Significance: Menguatkan hipotesis bahwa malware ini non-active, incomplete payload, atau requires external trigger.
-
-My Contribution: Eksekusi dan dokumentasi hasil Process Hacker.
-
-Finding 3 — Hidden Behavior Likely Requires Trigger
-
-Description: Berdasarkan runtime behavior, malware tidak menunjukkan tindakan aktif meskipun berjalan sebagai executable.
-
-Evidence: Tidak ada registry change, process persistence, network callback, atau file drop.
-
-Significance: Malware kemungkinan termasuk kategori:
-
-Dormant sample
-
-Test/debug build
-
-Component-based malware (bagian dari chain infection)
-
-My Contribution: Analisis dan interpretasi dari dynamic execution result.
-
+5. Contribution Summary
 5. Report Sections I Contributed To
 
 | Section | Contribution | Percentage |
@@ -140,89 +68,39 @@ My Contribution: Analisis dan interpretasi dari dynamic execution result.
 | Recommendations | Deteksi dan monitoring | 20% |
 | Presentation Slides | - | - |
 
-6. Collaboration Activities
-Team Meetings
+6. Collaboration
 
-Meeting 1: Setup sandbox and workflow alignment
+Berkomunikasi rutin melalui WhatsApp Group
 
-Meeting 2: Sharing runtime execution findings
+Sinkronisasi hasil dengan tim IoC, static analysis, dan dokumentasi
 
-Meeting 3: Integrating final report
-
-Communication
-
-Channel: WhatsApp group
-
-Response time: Fast (≤30 minutes)
-
-Collaboration support:
-
-Sharing live testing results
-
-Confirming network analysis findings
+Mendukung integrasi hasil network analysis ke final report
 
 7. Challenges & Solutions
-Challenge 1 — Malware did not show visible behavior
-
-Solution: Eksekusi berulang dengan monitoring tools
-
-Outcome: Tetap tidak ada aktivitas, menjadi bagian dari hasil valid analisis
-
-Challenge 2 — Process identification via Process Hacker
-
-Solution: Cross-reference execution time and running process
-
-Outcome: Screenshot valid malware runtime berhasil diperoleh
-
+Challenge	Solution
+Tidak ada traffic yang muncul di Wireshark	Melakukan verifikasi ulang VM network mode dan eksekusi ulang sample
+Identifikasi process malware	Cross-check melalui hashing dan behavior logs
 8. Skills Developed
-Technical Skills
 
-Dynamic malware analysis
+Dynamic malware execution
 
-Network packet inspection
+Network behavior monitoring
 
-Runtime behavior analysis
+Process and behavior tracking
 
-Soft Skills
+Dokumentasi forensik
 
-Reporting and evidence documentation
+9. Self-Evaluation
 
-Research interpretation
-
-Technical coordination
-
-9. What I Learned
-
-Tidak semua malware langsung menunjukkan behaviour setelah dijalankan
-
-Perlu kombinasi static + dynamic analysis sebelum menyimpulkan
-
-Evidence-based analysis penting agar laporan tidak bias atau asumtif
-
-10. Self-Evaluation
-
+Effort Level: 9/10
+Work Quality: 9/10
 Contribution Level: High
-Effort Level: 8/10
-Work Quality: 8.5/10
 
-Justification:
-Saya berkontribusi langsung pada bagian paling riskan (dynamic execution) dengan output berbukti screenshot dan analisis.
-
-11. Evidence of Work
-
-Wireshark PCAP file
-
-Screenshot Process Hacker
-
-Folder runtime result
-
-12. Additional Comments
-
-Project ini membantu saya memahami workflow real malware dynamic analysis dan bagaimana menjaga kontrol terhadap lingkungan eksekusi dengan aman.
+Saya berkontribusi pada bagian analisis runtime dan network monitoring yang mendukung kesimpulan akhir tim.
 
 Declaration
 
-Saya menyatakan bahwa isi laporan ini sesuai dengan kontribusi saya.
+I confirm that this report reflects my personal contribution to the project.
 
 Signature: Muhammad Bagas Anugrah
-Date: 29-11-2025
+Date: 29 November 2025
